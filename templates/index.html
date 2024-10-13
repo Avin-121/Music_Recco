@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Recommendation App</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #1db954, #1ed760);
+            color: white;
+        }
+        .container {
+            text-align: center;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 50px;
+            border-radius: 20px;
+            box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .container:hover {
+            transform: scale(1.02);
+            box-shadow: 0 20px 30px rgba(0, 0, 0, 0.6);
+        }
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 40px;
+        }
+        .cta-button {
+            display: inline-block;
+            padding: 15px 35px;
+            background-color: #1db954;
+            color: white;
+            font-size: 1.3rem;
+            font-weight: 600;
+            text-decoration: none;
+            border-radius: 30px;
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+        }
+        .cta-button i {
+            margin-left: 10px;
+        }
+        .cta-button:hover {
+            background-color: #1ed760;
+            box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
+        }
+        footer {
+            margin-top: 30px;
+            color: rgba(255, 255, 255, 0.7);
+        }
+        footer a {
+            color: #fff;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Discover New Music</h1>
+        <p>Find your next favorite song based on your mood, genre, or favorite artists.</p>
+        <a href="/login" class="cta-button">Login with Spotify <i class="fab fa-spotify"></i></a>
+        <footer>
+            <p>Powered by <a href="https://www.spotify.com" target="_blank">Spotify</a></p>
+        </footer>
+    </div>
+</body>
+</html>
